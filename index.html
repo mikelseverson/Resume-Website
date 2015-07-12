@@ -5,38 +5,39 @@
     <title>Mikel Severson's Resume</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-<div id="sidebar">
+<section class="sidebar">
+    <img src="https://pbs.twimg.com/profile_images/565217363226669056/cwP-mrYr.jpeg" alt="Picture of Mikel Severson">
 
-    <img src="https://pbs.twimg.com/profile_images/565217363226669056/cwP-mrYr.jpeg">
-    <p>
-        <a href="#"> <img class="social-media" src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg"></a>
-        <a href="http://www.twitter.com/mksev"> <img class="social-media" src="http://www.clearview.ca/_/rsrc/1404143606692/home/social-media/twitter_1307050985_2229.png"></a>
-    </p>
+    <p><a href="#" class="show-resume">
+        Click to show my resume
+    </a></p>
     <hr>
     <p>
         Goal-oriented student with a passion for learning and creating. Strongly believes technology directly improves
         lives and determined to develop software to have a positive impact on others.
     </p>
     <hr>
-</div>
+</section>
 
-<div id="card-container">
-    <div id="card"><h1>Education</h1>
+<section class="card-container">
+    <article class="card"><h1>Education</h1>
 
         <h2>Normandale Community College
-            <div class="right">2013 - 2014</div>
+            <aside class="right">2013 - 2014</aside>
         </h2>
         <h2>Eden Prairie High School
-            <div class="right">2008 - 2013</div>
+            <aside class="right">2008 - 2013</aside>
         </h2>
-    </div>
+    </article>
 
-    <div id="card"><h1>Work Experience</h1>
+    <article class="card"><h1>Work Experience</h1>
 
         <h2>Best Buy
-            <div class="right">2014 - 2015</div>
+            <aside class="right">2014 - 2015</aside>
         </h2>
         Sales Associate<br>
         Engage customers using selling skills to build complex, connected solutions and inspire by demonstrating value
@@ -46,7 +47,7 @@
         Communicate the benefit of complex software in easy-to-understand terms.
 
         <h2>Burger King
-            <div class="right">2012 - 2014</div>
+            <aside class="right">2012 - 2014</aside>
         </h2>
         Team Member<br>
 
@@ -60,7 +61,7 @@
         This provided valuable management, teamwork, and customer service skills.
 
         <h2>Embassy Suites Hotel
-            <div class="right">2012 - 2013</div>
+            <aside class="right">2012 - 2013</aside>
         </h2>
         Banquet Server<br>
 
@@ -70,26 +71,24 @@
         presentation of food.
         Ensured customers needs were met as well as ensured a clean environment throughout the event.
         Anticipated guests' needs and fulfilled them appropriately.</p>
+    </article>
+    <article class="card"><h1>Skills</h1>
 
-    </div>
-    <div id="card"><h1>Skills</h1>
-
-            <h2>Java</h2>
-            Skilled in basic programming functions including class inheritances, loops, stacks, linked lists, and
-            sorting techniques.
-            Currently progressing through Android development courses provided by Treehouse.
-            Able to quickly understand how complex code interacts and able to modify or implement code within these
-            systems.
-            <h2>Google AdWords</h2>
-            Received separate certifications for fundamental and advanced aspects of AdWords.
-            Proficient with AdWords editor for managing AdWords campaigns efficiently.
-            <h2>Web Development</h2>
-            Familiar with and can modify or develop basic functionality within a WordPress environment.
-            Experience creating and configuring web servers.
-            Software
-
-    </div>
-</div>
+        <h2>Java</h2>
+        Skilled in basic programming functions including class inheritances, loops, stacks, linked lists, and
+        sorting techniques.
+        Currently progressing through Android development courses provided by Treehouse.
+        Able to quickly understand how complex code interacts and able to modify or implement code within these
+        systems.
+        <h2>Google AdWords</h2>
+        Received separate certifications for fundamental and advanced aspects of AdWords.
+        Proficient with AdWords editor for managing AdWords campaigns efficiently.
+        <h2>Web Development</h2>
+        Familiar with and can modify or develop basic functionality within a WordPress environment.
+        Experience creating and configuring web servers.
+        Software
+    </article>
+</section>
 <script src="js/script.js"></script>
 </body>
 </html>
