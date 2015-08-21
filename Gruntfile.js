@@ -60,19 +60,19 @@ module.exports = function(grunt){
                 ],
                 "dest": "server/public/vendors/"
             },
-            bootstrap: {
-                expand: true,
-                cwd: 'node_modules',
-                src: [
-                    "bootstrap/dist/css/bootstrap.min.css"
-                ],
-                "dest": "server/public/vendors/"
-            },
             style: {
                 expand: true,
                 cwd: 'client',
                 src: [
                     "styles/*"
+                ],
+                "dest": "server/public/assets"
+            },
+            assets: {
+                expand: true,
+                cwd: 'client',
+                src: [
+                    "images/*"
                 ],
                 "dest": "server/public/assets"
             },
