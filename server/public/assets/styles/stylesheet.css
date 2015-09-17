@@ -12,6 +12,7 @@ hr {
 
 img {
     width: 100%;
+    height: auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
@@ -32,11 +33,10 @@ h2 {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.26);
     float: left;
     width: 300px;
-    height: 1200px;
+    height: 1700px;
 }
 .sidebar p {
-    padding-left: 17%;
-    padding-right: 7%;
+    padding: 0 10px 0 10px;
 }
 .social-media {
     width: 25px;
@@ -74,8 +74,8 @@ h2 {
         padding-left: 10%;
         padding-right: 10%;
     }
-    img {
-        max-height: 500px;
+    hr {
+        display: none;
     }
     .card {
         width: 80%;
