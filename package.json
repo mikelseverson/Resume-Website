@@ -18,11 +18,6 @@
   },
   "homepage": "https://github.com/mikelseverson/prime_prestudy_03_resume#readme",
   "dependencies": {
-    "angular": "^1.4.4",
-    "angular-animate": "^1.4.4",
-    "angular-aria": "^1.4.4",
-    "angular-material": "^0.10.1",
-    "angular-route": "^1.4.4",
     "express": "^4.13.3",
     "grunt": "^0.4.5",
     "grunt-contrib-copy": "^0.8.1",
