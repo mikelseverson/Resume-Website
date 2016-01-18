@@ -1,9 +1,7 @@
 'use strict';
 
-var express = require('express');
-var app = express();
-var lex = require('letsencrypt-express');
-
+var express = require('express'),
+	app = express();
 
 var index = require('./routes/index');
 
