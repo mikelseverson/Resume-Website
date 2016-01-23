@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikelseverson/prime_prestudy_03_resume.git"
+    "url": "git+https://github.com/mikelseverson/Resume-Website.git"
   },
   "author": "Mikel Severson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mikelseverson/prime_prestudy_03_resume/issues"
+    "url": "https://github.com/mikelseverson/Resume-Website/issues"
   },
-  "homepage": "https://github.com/mikelseverson/prime_prestudy_03_resume#readme",
+  "homepage": "https://github.com/mikelseverson/Resume-Website#readme",
   "dependencies": {
     "express": "^4.13.3",
     "grunt": "^0.4.5",
