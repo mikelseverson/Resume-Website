@@ -3,72 +3,82 @@
 <head lang="en">
     <title>Mikel Severson's Resume</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <section class="sidebar">
-        <img src="assets/images/mikel.png" alt="Picture of Mikel Severson">
-            <p>My goal is to help businesses integrate cutting edge technologies to increase customer engagement, improve workflows, and find new ways to provide value to customers. Web Application Developer, Inbound Marketer, and Entrepreneur.</p>
-            <hr>
-    </section>
+    <div class="container col-sm-3 col-md-3 col-lg-2">
+        <section class="sidebar">
+            <img src="assets/images/mikel.png" alt="Picture of Mikel Severson">
+            <h1 class="card-header">Mikel Severson</h1>
+            <h2 class="card-header"><a href="mailto:mkseve@gmail.com">mkseve@gmail.com</a></h2>
+        </section>
+    </div>
 
-    <section class="card-container">
-
-        <article class="card">
+    <div class="container col-sm-9">
+        <section class="card col-md-12">
             <h1>Welcome</h1>
-            <p>Thank you for looking at my portfolio, follow me on <a href="http://www.twitter.com/mksev">Twitter</a> or look at my <a href="http://www.github.com/mikelseverson">Github</a>.
-            <p>an updated portfolio is currently in development</p>
-        </article>
+            <p>My goal is to help businesses integrate cutting edge technologies to increase customer engagement, improve workflows, and find new ways to provide value to customers. </p>
+            <p>Web Application Developer, Inbound Marketer, and Entrepreneur.</p>
+            <p>Thank you for looking at my portfolio, to stay updated on my projects follow me on <a href="http://www.twitter.com/mksev">Twitter</a> or look at my <a href="http://www.github.com/mikelseverson">Github</a>.</p>
+        </section>
 
-        <article class="card">
-            <h1>Porfolio</h1>
-            <ul>
-                <li><h2><a href="https://your-market.herokuapp.com/">Delivery Marketplace</a></h2></li>
-                <li><h2>Update coming soon</h2></a></li>
-            </ul>
-        </article>
+        <section class="card col-md-5">
+                <h1>Technologies</h1>
+                <h2>Frontend Development</h2>
+                <ul>
+                    <li>HTML5 / CSS3</li>
+                    <li>React</li>
+                </ul>
+                <h2>Backend Development</h2>
+                <ul>
+                    <li>Node / Express</li>
+                    <li>Meteor</li>
+                    <li>Java</li>
+                </ul>
+                <h2>Workflows</h2>
+                <ul>
+                    <li>Gulp</li>
+                    <li>Grunt</li>
+                </ul>
+                <h2>Concepts</h2>
+                <ul>
+                    <li>Progressive Web Apps</li>
+                    <li>Offline Mobile First</li>
+                </ul>
+        </section>
 
-        <article class="card">
-            <h1>Education</h1>
-            <h2>Prime Digital Academy <aside class="right">2015 - 2015</aside></h2>
-            <h2>Normandale Community College <aside class="right">2013 - 2014</aside></h2>
-            <h2>Eden Prairie High School <aside class="right">2008 - 2013</aside></h2>
-        </article>
+        <section class="col-md-6 col-md-offset-1" style="padding: 0">
+            <section class="card">
+                <h1>Porfolio</h1>
+                <ul>
+                    <li><h2><a href="https://your-market.herokuapp.com/">Delivery Marketplace</a></h2></li>
+                    <li><h2>Update coming soon</h2></a></li>
+                </ul>
+            </section>   
 
-        <article class="card">
+            <section class="card">
+                <h1>Education</h1>
+                <h2>Prime Digital Academy <aside class="right">2015 - 2015</aside></h2>
+                <h2>Normandale Community College <aside class="right">2013 - 2014</aside></h2>
+                <h2>Eden Prairie High School <aside class="right">2008 - 2013</aside></h2>
+            </section>
+        </section>
+
+        <section class="card col-md-12">
             <h1>Work Experience</h1>
-
             <h2>Best Buy - Sales Associate<aside class="right">2014 - 2015</aside></h2>
             <p>While working at Best Buy, I engaged customers using selling skills to build complex, connected solutions.
                 I learned valuable skills in inspiring by demonstrating benefits of new technologies.
                 Ensured a professional customer experience by maintaining stock, providing a clean environment, and actively looking for new ways to provide value to customers.</p>
-
             <h2>Embassy Suites Hotel - Banquet Server<aside class="right">2012 - 2013</aside></h2>
             <p>Worked with a small team which required teamwork and communication to be a priority to ensure that the event was prepared
             efficiently. We prepared banquet rooms as per instructions of the event coordinator, ensured consistency of preparation and
             presentation of food. We also ensured customers needs were met as well as maintained a clean environment throughout the event.
             I learned skills in Anticipating the needs of clients and fulfilling them appropriately.</p>
-        </article>
-
-        <article class="card">
-            <h1>Frontend:</h1>
-            <h2>MEAN Stack</h2>
-            <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>AngularJS</li>
-                <li>Node.js</li>
-            </ul>
-            <h2>Bootstrap</h2>
-            <h2>Angular Material</h2>
-            <h2>Bootstrap</h2>
-            <h2>Java</h2>
-            <h2>Google AdWords</h2>
-
-        </article>
-
-    </section>
+        </section>
+    </div>
 </body>
 
 </html>

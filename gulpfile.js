@@ -48,9 +48,7 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', () => {
 	gulp.src('./client/scripts/**/*.js')
-		.pipe(babel({
-			presets: ['es2015']
-		}))
+		.pipe(babel())
 		.pipe(sourcemap.init())
 		.pipe(concat('app.js'))
 		.pipe(uglify())
