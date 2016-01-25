@@ -8344,6 +8344,13 @@ section.card {
   padding-right: 0;
 }
 
+@media (min-width: 700px) and (max-width : 992px) {
+  .split {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 700px ) {
   .sidebar {
     margin: 0;

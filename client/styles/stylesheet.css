@@ -36,8 +36,8 @@ h2 {
     padding: 25px;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
     border-radius: 1px;
-
 }
+
 .card-header {
     text-align: center;
     letter-spacing: 2px;
@@ -56,6 +56,12 @@ section.card {
     padding-right: 0;
 }
 
+@media (min-width: 700px) and (max-width : 992px) {
+.split {
+    padding-right: 0;
+    padding-left: 0;
+}
+}
 @media(max-width: 700px ) {
     .sidebar {
         margin: 0;
