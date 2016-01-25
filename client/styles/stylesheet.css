@@ -50,6 +50,9 @@ section.card {
 .right {
     float: right;
 }
+.split {
+    padding-right: 0;
+}
 
 @media(max-width: 700px ) {
     .sidebar {
@@ -67,5 +70,9 @@ section.card {
     .container {
         padding: 0;
         margin: 0;
+    }
+    .split {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

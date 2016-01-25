@@ -8339,6 +8339,10 @@ section.card {
   float: right;
 }
 
+.split {
+  padding-right: 0;
+}
+
 @media (max-width: 700px ) {
   .sidebar {
     margin: 0;
@@ -8358,5 +8362,10 @@ section.card {
   .container {
     padding: 0;
     margin: 0;
+  }
+
+  .split {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
