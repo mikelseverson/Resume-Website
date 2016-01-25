@@ -5,6 +5,7 @@ var sourcemap = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 var imagemin = require('gulp-imagemin')
+var concatCss = require('gulp-concat-css');
 var imageminPngquant = require('imagemin-pngquant');
 var babel = require('gulp-babel');
 
@@ -42,6 +43,7 @@ gulp.task('copy-images', () => {
 
 gulp.task('styles', () => {
 	gulp.src('./client/styles/**/*.css')
+	    .pipe(concatCss("/stylesheet.css"))
 		.pipe(gulp.dest('./server/public/assets/styles'))
 		.pipe(reload({stream: true}));
 });
