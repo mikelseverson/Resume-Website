@@ -9,14 +9,14 @@ var concatCss = require('gulp-concat-css');
 var imageminPngquant = require('imagemin-pngquant');
 var babel = require('gulp-babel');
 
-gulp.task('default', ['content', 'copy-images', 'styles'], () => {
+gulp.task('default', ['content', 'styles'], () => {
 	gulp.watch('./client/views/**/*.html', ['content']);	
 	gulp.watch('./client/images/*', ['copy-images']);	
 	gulp.watch('./client/styles/**/*.css', ['styles']);
 	gulp.watch('./client/scripts/**/*.js', ['scripts']);	
 })
 
-gulp.task('serve', ['content', 'copy-images', 'styles', 'scripts'], () => {
+gulp.task('serve', ['content', 'styles', 'scripts'], () => {
 browserSync.init({
 	proxy: "localhost:5000"
 })

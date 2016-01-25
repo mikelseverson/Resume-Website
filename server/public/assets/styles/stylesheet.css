@@ -8302,7 +8302,7 @@ h2 {
   color: #e7e9fd;
   background: #FFFFFF;
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
-  border-radius: 5px;
+  border-radius: 3px;
   margin-top: 20px;
   overflow: hidden;
 }
@@ -8321,6 +8321,7 @@ h2 {
   background: #FFFFFF;
   padding: 25px;
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
+  border-radius: 1px;
 }
 
 .card-header {
