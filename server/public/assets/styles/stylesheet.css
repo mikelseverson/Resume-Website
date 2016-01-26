@@ -8285,7 +8285,6 @@ body {
   background: #E4E4E4;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  height: 100%;
 }
 
 h1 {
@@ -8317,6 +8316,14 @@ h2 {
   height: auto;
 }
 
+.sidebar #email {
+  font-size: 11px;
+}
+
+.sidebar h1 {
+  padding-top: 8px;
+}
+
 .card {
   background: #FFFFFF;
   padding: 15px 25px 35px 25px;
@@ -8332,11 +8339,11 @@ h2 {
 .card-header {
   text-align: center;
   letter-spacing: 2px;
-  padding-top: 0;
+  padding-top: ;
   margin-top: 0;
 }
 
-section.card {
+.card {
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -8368,7 +8375,7 @@ section.card {
     padding-right: 10%;
   }
 
-  section.card {
+  .card {
     margin: 0;
   }
 
