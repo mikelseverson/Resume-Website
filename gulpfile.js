@@ -4,7 +4,6 @@ var imagemin = require('gulp-imagemin')
 var imageminPngquant = require('imagemin-pngquant');
 
 var concatCss = require('gulp-concat-css');
-
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var sourcemap = require('gulp-sourcemaps');
