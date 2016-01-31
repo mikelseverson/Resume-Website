@@ -1,7 +1,7 @@
 {
-  "name": "resume-material-design",
+  "name": "mikel-severson-portfolio",
   "version": "1.0.0",
-  "description": "Mikel Severson's resume created with Material design in mind",
+  "description": "Mikel Severson's portfolio webstie created with Material design in mind",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

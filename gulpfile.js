@@ -1,13 +1,17 @@
 var gulp = require('gulp');
+
+var imagemin = require('gulp-imagemin')
+var imageminPngquant = require('imagemin-pngquant');
+
+var concatCss = require('gulp-concat-css');
+
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var sourcemap = require('gulp-sourcemaps');
+var babel = require('gulp-babel');
+
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
-var imagemin = require('gulp-imagemin')
-var concatCss = require('gulp-concat-css');
-var imageminPngquant = require('imagemin-pngquant');
-var babel = require('gulp-babel');
 
 gulp.task('default', ['content', 'styles'], () => {
 	gulp.watch('./client/views/**/*.html', ['content']);	
