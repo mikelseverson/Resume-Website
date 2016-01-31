@@ -1,5 +1,5 @@
 body {
-    background: #E4E4E4;
+    background: #E4E4E4 url('/assets/images/bg.png');
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -18,7 +18,7 @@ h2 {
     color: #e7e9fd;
     background: #FFFFFF;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
     margin-top: 15px;
     overflow: hidden;
 }
@@ -45,10 +45,14 @@ h2 {
 }
 
 #social-media-card {
-    padding: 25px;
+    padding:  10px 25px 10px 25px;
+    margin: 0px auto 0px;
     text-align:center;
 }
-
+#nav-card {
+    margin-top: 0px;
+    text-align: center;
+}
 .card-header {
     text-align: center;
     letter-spacing: 2px;

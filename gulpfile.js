@@ -39,7 +39,6 @@ gulp.task('copy-images', () => {
 	gulp.src('./client/images/*')
 	.pipe(imagemin({
 		progressive: true,
-		use: [imageminPngquant({quality: '65-80', speed: 4})()]
 		}))
 	.pipe(gulp.dest('./server/public/assets/images'))
 })
