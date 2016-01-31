@@ -35,7 +35,7 @@ h2 {
     height: auto;
 }
 .sidebar #email {
-    font-size: .7em;
+    font-size: .65em;
 }
 .sidebar h1 {
     padding-top: 8px;
@@ -51,7 +51,7 @@ h2 {
 #social-media-card {
     padding:  10px 25px 10px 25px;
     margin: 0px auto 0px;
-    text-align:center;
+    text-align: center;
 }
 #nav-card {
     margin-top: 0px;
