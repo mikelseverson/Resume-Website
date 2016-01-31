@@ -1,6 +1,6 @@
 body {
     background: #E4E4E4 url('/assets/images/bg.png');
-    margin: 0;
+    margin: margin-bottom: 100px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,6 +12,10 @@ h1 {
 h2 {
     margin-bottom: 4px;
     font-size: 1.17em;
+}
+
+.container {
+    margin-bottom: 15px
 }
 
 .sidebar {
@@ -31,7 +35,7 @@ h2 {
     height: auto;
 }
 .sidebar #email {
-    font-size: 10px;
+    font-size: .7em;
 }
 .sidebar h1 {
     padding-top: 8px;
@@ -56,7 +60,6 @@ h2 {
 .card-header {
     text-align: center;
     letter-spacing: 2px;
-    padding-top: ;
     margin-top: 0;
 }
 
