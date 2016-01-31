@@ -1,8 +1,8 @@
-var express = require('express');
+var express = require('express'),
+	path = require('path');
 var router = express.Router();
-var path = require('path');
 
-router.get("/*", function(req, res, next){
+router.get("/*", (req, res, next) => {
     var file = req.params[0] || "assets/views/index.html";
     res.sendFile(path.join(__dirname, "../public", file));
 });

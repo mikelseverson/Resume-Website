@@ -8,7 +8,7 @@ var index = require('./routes/index');
 app.use('/', index);
 app.set("port", (process.env.PORT || 5000));
 
-app.listen(app.get("port"), function(){
+app.listen(app.get("port"), () => {
     console.log("Listening on port: " + app.get("port"));
 });
 
