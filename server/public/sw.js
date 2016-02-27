@@ -3,7 +3,8 @@ this.addEventListener('install', function(event) {
     caches.open('v1').then(function(cache) {
       return cache.addAll([
         '/',
-        '/images/bg.png',
+        '/views/index.html',
+        '/images/bg.png'
       ]);
     })
   );
