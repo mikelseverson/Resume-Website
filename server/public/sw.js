@@ -1,4 +1,4 @@
-var staticCacheName = 'portfolio-static-v1';
+var staticCacheName = 'portfolio-static-v1.1';
 
 this.addEventListener('install', function(event) {
   event.waitUntil(
@@ -6,7 +6,16 @@ this.addEventListener('install', function(event) {
       return cache.addAll([
         '/',
         '/views/index.html',
-        '/images/bg.png'
+        '/styles/stylesheet.css',
+        '/styles/bootstrap.css',
+        '/images/bg.png',
+        '/images/mikel.png',
+        '/images/favicon.ico',
+        '/images/github.png',
+        '/images/linkedin.png',
+        '/images/twitter.png',
+        '/',
+        ''
       ]);
     })
   );
