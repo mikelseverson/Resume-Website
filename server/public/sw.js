@@ -12,7 +12,8 @@ this.addEventListener('install', function(event) {
         '/images/favicon.ico',
         '/images/github.png',
         '/images/linkedin.png',
-        '/images/twitter.png'
+        '/images/twitter.png',
+        '/images/resume-icon.png'
       ]);
     })
   );
