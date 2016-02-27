@@ -6,7 +6,7 @@ this.addEventListener('install', function(event) {
       return cache.addAll([
         '/',
         '/views/index.html',
-        '/styles/bootstrap.css',
+        '/styles/stylesheet.css',
         '/images/bg.png',
         '/images/mikel.png',
         '/images/favicon.ico',
