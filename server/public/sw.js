@@ -1,6 +1,8 @@
+var staticCacheName = 'portfolio-static-v1';
+
 this.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('v1').then(function(cache) {
+    caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
         '/',
         '/views/index.html',
@@ -12,5 +14,10 @@ this.addEventListener('install', function(event) {
 
 
 self.addEventListener('fetch', function(event) {
-  console.log(event);
+  events.respondWith(
+    caches.match(event.request).then(function(response) {
+      if (response) return response;
+      return fetch(event.request)
+    }
+  )
 });
