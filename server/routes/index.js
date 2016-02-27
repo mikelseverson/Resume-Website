@@ -3,7 +3,7 @@ var express = require('express'),
 var router = express.Router();
 
 router.get("/*", (req, res, next) => {
-    var file = req.params[0] || "assets/views/index.html";
+    var file = req.params[0] || "views/index.html";
     res.sendFile(path.join(__dirname, "../public", file));
 });
 

@@ -1821,7 +1821,7 @@ address {
   position: fixed;
 }
 body {
-  background: #E4E4E4 url("/assets/images/bg.png");
+  background: #E4E4E4 url("/images/bg.png");
   margin: margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
 }

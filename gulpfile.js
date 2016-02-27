@@ -12,41 +12,41 @@ var babel = require('gulp-babel');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
-gulp.task('default', ['content', 'styles'], () => {
-	gulp.watch('./client/views/**/*.html', ['content']);	
-	gulp.watch('./client/images/*', ['copy-images']);	
+gulp.task('default', ['views', 'styles', 'scripts', 'images'], () => {
+	gulp.watch('./client/views/**/*.html', ['views']);
+	gulp.watch('./client/images/*', ['images']);
 	gulp.watch('./client/styles/**/*.css', ['styles']);
-	gulp.watch('./client/scripts/**/*.js', ['scripts']);	
+	gulp.watch('./client/scripts/**/*.js', ['scripts']);
 })
 
-gulp.task('serve', ['content', 'styles', 'scripts'], () => {
+gulp.task('serve', ['views', 'styles', 'scripts'], () => {
 browserSync.init({
 	proxy: "localhost:5000"
 })
-	gulp.watch('./client/views/**/*.html', ['content']);	
-	gulp.watch('./client/images/*', ['copy-images']);	
+	gulp.watch('./client/views/**/*.html', ['views']);
+	gulp.watch('./client/images/*', ['images']);
 	gulp.watch('./client/styles/**/*.css', ['styles']);
-	gulp.watch('./client/scripts/**/*.js', ['scripts']);	
+	gulp.watch('./client/scripts/**/*.js', ['scripts']);
 });
 
-gulp.task('content', () => {
+gulp.task('views', () => {
 	gulp.src('./client/views/index.html')
-		.pipe(gulp.dest('./server/public/assets/views'))
+		.pipe(gulp.dest('./server/public/views'))
 		.pipe(reload({stream: true}));
 });
 
-gulp.task('copy-images', () => {
+gulp.task('images', () => {
 	gulp.src('./client/images/*')
 	.pipe(imagemin({
 		progressive: true,
 		}))
-	.pipe(gulp.dest('./server/public/assets/images'))
+	.pipe(gulp.dest('./server/public/images'))
 })
 
 gulp.task('styles', () => {
 	gulp.src('./client/styles/**/*.css')
 	    .pipe(concatCss("/stylesheet.css"))
-		.pipe(gulp.dest('./server/public/assets/styles'))
+		.pipe(gulp.dest('./server/public/styles'))
 		.pipe(reload({stream: true}));
 });
 
@@ -57,7 +57,6 @@ gulp.task('scripts', () => {
 		.pipe(concat('app.js'))
 		.pipe(uglify())
 		.pipe(sourcemap.write())
-		.pipe(gulp.dest('./server/public/assets/scripts'))
+		.pipe(gulp.dest('./server/public/scripts'))
 		.pipe(reload({stream: true}));
 });
-
