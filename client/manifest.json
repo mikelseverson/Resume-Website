@@ -6,6 +6,6 @@
         "sizes": "72x72"
         }],
   "background_color": "#3E4EB8",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#2E3AA1"
 }
