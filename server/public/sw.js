@@ -1,4 +1,4 @@
-var staticCacheName = 'portfolio-static-v2';
+var staticCacheName = 'portfolio-static-v2.1';
 
 this.addEventListener('install', function(event) {
   event.waitUntil(
