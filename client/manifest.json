@@ -1,11 +1,17 @@
 {
-  "name": "Mikel Resume",
-  "short_name": "Mikel's Resume",
+  "name": "Mikel Severson's Resume",
+  "short_name": "Portfolio",
   "icons": [{
-        "src": "images/favicon.ico",
-        "sizes": "72x72"
-        }],
+    "src": "images/favicon.ico",
+    "sizes": "72x72"
+  },
+  {
+    "src": "images/resume-icon.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
   "background_color": "#3E4EB8",
-  "display": "fullscreen",
+  "display": "standalone",
+  "start_url": "/",
   "theme_color": "#2E3AA1"
 }
