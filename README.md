@@ -1,2 +1,2 @@
 # Mikel Severson Portfolio
-Website hosted on http://www.mikelseverson.com/
+Website hosted on https://www.mikelseverson.com/
