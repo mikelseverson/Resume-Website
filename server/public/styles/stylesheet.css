@@ -1,22 +1,3 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=f83f60f3a08b4194965b)
- * Config saved to config.json and https://gist.github.com/f83f60f3a08b4194965b
- */
-
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1822,7 +1803,6 @@ address {
 }
 body {
   background: #E4E4E4 url("/images/bg.png");
-  margin: margin-bottom: 100px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1836,17 +1816,42 @@ h2 {
   font-size: 1.17em;
 }
 
-.container {
-  margin-bottom: 15px;
+.sidebar {
+  background: #FFFFFF;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  height: 100vh;
+  width: 15vh;
+  position: fixed;
 }
 
-.sidebar {
-  color: #e7e9fd;
-  background: #FFFFFF;
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
-  border-radius: 3px 3px 0px 0px;
-  margin-top: 15px;
-  overflow: hidden;
+.content-header {
+  width: 92%;
+  height: 100vh;
+  background: url("https://httpete.com/images/work-.jpg");
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.content-content {
+  padding: 0;
+  margin: 40vh 0 0 0;
+}
+
+.content-section {
+  background: url("https://httpete.com/images/work-.jpg");
+  height: 100vh;
+  margin: 0 0 0 15vh;
+  padding: 30px 0;
+}
+
+.main {
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar p {
@@ -1854,17 +1859,36 @@ h2 {
   margin: 0px;
 }
 
-.sidebar img {
+.sidebar .header img {
   width: 100%;
   height: auto;
 }
 
 .sidebar #email {
-  font-size: .65em;
+  font-size: .70em;
 }
 
 .sidebar h1 {
-  padding-top: 8px;
+  margin-top: 25px;
+}
+
+.sidebar .card {
+  padding: 10px 25px 10px 25px;
+  margin: 0px auto 0px;
+  text-align: center;
+}
+
+.nav {
+  line-height: 45px;
+  margin-top: 27vh;
+}
+
+.social-media {
+  margin-top: 25vh;
+}
+
+.content .card:first {
+  margin: inherit 20% inherit 20%;
 }
 
 .card {
@@ -1872,12 +1896,6 @@ h2 {
   padding: 15px 25px 35px 25px;
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26);
   border-radius: 1px;
-}
-
-#social-media-card {
-  padding: 10px 25px 10px 25px;
-  margin: 0px auto 0px;
-  text-align: center;
 }
 
 #nav-card {
@@ -1888,12 +1906,31 @@ h2 {
 .card-header {
   text-align: center;
   letter-spacing: 2px;
-  margin-top: 0;
+}
+
+.section-2 {
+  background: url("http://www.pbtech.co.nz/fileslib/_20150810154230_KBA12012-Banner-R10-001.jpg");
 }
 
 .card {
   margin-top: 15px;
   margin-bottom: 5px;
+  margin: 15px auto;
+  padding: 0;
+}
+
+.featured {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.featured-image {
+  height: 100%;
+  padding-left: 0;
 }
 
 .right {
@@ -1904,18 +1941,43 @@ h2 {
   padding-right: 0;
 }
 
-@media (min-width: 700px) and (max-width : 992px) {
+@media (min-width: 720px) and (max-width : 992px) {
   .split {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-@media (max-width: 700px ) {
+@media (max-width: 767px ) {
+  .featured {
+    margin: 0;
+  }
+
   .sidebar {
     margin: 0;
-    padding: 0;
     border-radius: 0;
+    height: auto;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+
+  .content-header {
+    margin-top: 60vh;
+    width: 100%;
+  }
+
+  .content-content {
+    margin: 0;
+  }
+
+  .content {
+    padding: 0;
   }
 
   .sidebar p {
@@ -1923,17 +1985,21 @@ h2 {
     padding-right: 10%;
   }
 
+  .split {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    overflow-y: auto;
+    height: auto;
+  }
+
   .card {
     margin: 0;
   }
 
-  .container {
+  .col-md-12 {
     padding: 0;
-    margin: 0;
-  }
-
-  .split {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
